@@ -1,20 +1,51 @@
 {
-  "name": "soil",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hyperstatic-starter",
+  "description": "Hyperstatic starter",
+  "author": "Maarten Dings",
+  "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html --https",
+    "build": "rimraf .cache && rimraf dist && parcel build ./src/index.html --no-source-maps --detailed-report && workbox generateSW workbox-config.js",
+    "render-pages": "npm run build && node ./render-pages.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel": "^1.12.4",
-    "sass": "^1.25.0"
+  "babel": {
+    "plugins": [
+      [
+        "babel-plugin-jsx-pragmatic",
+        {
+          "module": "hyperapp",
+          "import": "h",
+          "export": "h"
+        }
+      ]
+    ]
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "classcat": "^4.0.2",
+    "hyperapp": "^2.0.3",
+    "hyperstatic": "^0.2.9",
+    "sanitize.css": "^10.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-jsx-pragmatic": "^1.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^2.7.1",
+    "sass": "^1.25.1-test.1",
+    "workbox-cli": "^4.3.1"
   }
 }
