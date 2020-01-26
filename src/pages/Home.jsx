@@ -1,9 +1,11 @@
+import Anchor from '../components/Anchor'
 import Header from '../components/Header'
 import Serviceblock from '../components/Serviceblock'
 import Callout from '../components/Callout'
 import Column from '../components/Column'
 import Cta from '../components/cta'
 import Container from '../components/Container'
+import Newsletter from '../components/Newsletter'
 
 import './home.sass'
 
@@ -18,7 +20,7 @@ export default state => (
             <Container>
                 <Column width="8">
                     <Callout>We hoeven niet meer conservatief te zijn!</Callout>
-                    <p>De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Je wilt mee in deze ontwikkeling, maar waar moet je beginnen?</p>
+                    <p data-aos="fade-up" data-aos-delay="200">De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Je wilt mee in deze ontwikkeling, maar waar moet je beginnen?</p>
                     </Column>
             </Container>
         </Header>
@@ -36,10 +38,10 @@ export default state => (
         <section class="services">
             <Container>
                 <Column width="4">
-                    <h2 data-aos="fade-up">Workshops & trainingen</h2>
+                    <h2 data-aos="fade-up">Workshops &amp; trainingen</h2>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum est magni pariatur facilis, illum vel harum sunt dolor alias et cumque rem quae odit, placeat dolore 
                     accusantium optio impedit!</p>
-                    <a href="/agenda">Bekijk de volledige agenda</a>
+                    <Anchor href="/agenda">Bekijk de volledige agenda</Anchor>
                 </Column>
                 <Column width="8" flex={true}>
                     <Serviceblock to="/chatbot-discovery-track">Chatbot Discovery Track</Serviceblock>

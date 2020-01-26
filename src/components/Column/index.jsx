@@ -15,6 +15,6 @@ export default ({width = 12, flex = false}, children) => (
         'c-column--nine': width == 9,
         'c-column--ten': width == 10,
         'c-column--eleven': width == 11,
-        'c-column--twelve': width == 112
+        'c-column--twelve': width == 12
     })}>{children}</span>
 )

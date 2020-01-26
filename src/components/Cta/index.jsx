@@ -2,6 +2,9 @@ import cc from 'classcat'
 import './style.sass'
 
 
-export default ({to}, children) => (
-    <a class="c-cta" href={to}>{children}</a>
+export default ({to, disabled = false}, children) => (
+    <a class={({
+        'c-cta': true,
+        'is-disabled': disabled === true
+    })} href={to}>{children}</a>
 )

@@ -24,9 +24,11 @@
   "dependencies": {
     "aos": "^2.3.4",
     "classcat": "^4.0.2",
+    "dateformat": "^3.0.3",
     "hyperapp": "^2.0.3",
     "hyperstatic": "^0.2.9",
-    "sanitize.css": "^10.0.0"
+    "sanitize.css": "^10.0.0",
+    "swiper": "^5.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",

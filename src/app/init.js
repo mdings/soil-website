@@ -1,5 +1,23 @@
 import AOS from 'aos'
+import Swiper from 'swiper'
 
+const SetupSwiper = () => {
+    setTimeout(() => {
+        console.log(document.querySelector('.swiper-container'))
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            preloadImages: false,
+            freeMode: true,
+            lazy: true,
+            loop: true,
+            watchSlidesVisibility: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        })
+    }, 1000)
+}
 const SetupEventbrite = () => {
     requestAnimationFrame(() => {
         var exampleCallback = function() {
@@ -25,4 +43,4 @@ const SetupAOS = () => {
 
 export default [{
 
-}, SetupAOS(), SetupEventbrite()]
+}, SetupAOS(), SetupEventbrite(), SetupSwiper()]

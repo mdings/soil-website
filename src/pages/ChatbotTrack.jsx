@@ -12,6 +12,7 @@ export const Init = (state) => ({
 
 export default state => (
     <div class="p-workshop">
+        <article>
         <Header>
             <Container>
                 <Column width="7">
@@ -25,45 +26,42 @@ export default state => (
                     
         </Header>
         <Container align="center">
-            <Column width="10">
+            <Column width="9">
                 <Colorblock>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempore illum unde? Explicabo, nulla officiis sequi sed perspiciatis, odit laudantium dolorem, debitis consectetur quod illo impedit eaque fuga modi earum.</p>
                 </Colorblock>
                 <p>
                     <strong>Voor wie?</strong>
-                </p>
-                <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam id assumenda! Fuga reiciendis voluptate assumenda sint iste at laboriosam vero voluptates? Ducimus repudiandae omnis ut dolor ipsam quis obcaecati?
                 </p>
-                <p>
-                    <strong>Topics</strong>
-                </p>
                 <ul>
+                    <strong>Topics</strong>
                     <li>Bla fdfd </li>
                     <li>Bla fdfd </li>
                     <li>Bla fdfd </li>
                     <li>Bla fdfd </li>
                 </ul>
-                <p>
-                    <strong>Na deze workshop weet je</strong>
-                    <Colorblock>
-                    <ol>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                    </ol>
-                    </Colorblock>
-                </p>
+                <strong>Na deze workshop weet je</strong>
+                <Colorblock>
+                <ol>
+                    <li>Bla fdfd </li>
+                    <li>Bla fdfd </li>
+                    <li>Bla fdfd </li>
+                    <li>Bla fdfd </li>
+                </ol>
+                </Colorblock>
             </Column>
         </Container>
         <Authorblock>
             <Container align="center">
-                <Column width="10">
+                <Column width="9">
+                    <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque accusamus porro tempore dolores alias quis. Iure perspiciatis, culpa necessitatibus labore veniam voluptas eligendi excepturi maiores delectus consequatur, laboriosam fuga.
+                    </p>
                 </Column>
             </Container>
         </Authorblock>
+        </article>
     </div>
 )
   

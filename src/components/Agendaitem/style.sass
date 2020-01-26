@@ -1,0 +1,53 @@
+.c-agenda-item
+    background-color: #fafbf8
+    height: 80px
+    display: flex
+    font-size: 18px
+    align-items: center
+    justify-content: space-between
+    padding: 0 20px 0 30px
+    position: relative
+
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 10px
+        display: inline-block
+        background-color: red
+
+    & + .c-agenda-item
+        margin-top: 10px
+
+
+    &__date
+        flex: 0 1 200px
+
+    &__name
+        flex: 0 1 300px
+        font-weight: bolder
+
+    &__location
+        flex: 0 1 200px
+
+    &__date,
+    &__name 
+        font-family: var(--font-bold)
+
+.c-agenda-item--t1
+    &:before
+        background-color: #662877
+
+.c-agenda-item--t2
+    &:before
+        background-color: #43b6a4
+
+.c-agenda-item--t3
+    &:before
+        background-color: #000d48
+
+.c-agenda-item--t4
+    &:before
+        background-color: #fcc763

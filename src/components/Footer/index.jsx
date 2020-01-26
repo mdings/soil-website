@@ -1,9 +1,12 @@
-import './style.css'
-
+import './style.sass'
+import Logo from '../../components/Logo'
 export default () => (
-  <footer>
-    <a href="https://github.com/loteoo/hyperstatic-starter" target="_blank" rel="noopener noreferrer">Starter repository</a>
-    <a href="https://github.com/loteoo/hyperstatic" target="_blank" rel="noopener noreferrer">Hyperstatic repository</a>
-    <a href="https://hyperstatic.dev/" target="_blank" rel="noopener noreferrer">Hyperstatic demo site</a>
-  </footer>
+    <footer>
+        <div>
+            <span>Copyright &copy; Soil</span>
+            <span>&nbsp;-&nbsp;Lichttoren 32 5611 BJ Eindhoven</span>
+            <span>&nbsp;-&nbsp;info@soilcompany.com</span>
+        </div>
+        <Logo />
+    </footer>
 )
