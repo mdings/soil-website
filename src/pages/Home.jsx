@@ -19,7 +19,7 @@ export default state => (
         <Header>
             <Container>
                 <Column width="8">
-                    <Callout>We hoeven niet meer conservatief te zijn!</Callout>
+                    <Callout>Wij maken innovatie <span>begrijpelijk</span> en <span>toegankelijk</span> voor iedereen door het aanbieden van bewezen tools en diensten.</Callout>
                     <p data-aos="fade-up" data-aos-delay="200">De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Je wilt mee in deze ontwikkeling, maar waar moet je beginnen?</p>
                     </Column>
             </Container>
