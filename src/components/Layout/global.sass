@@ -14,10 +14,10 @@
 	--text-color: #27292B
 	--accent-color: #0000FF
 	--container-width: 640px
-	// --font-regular: AvenirRegular, Arial, sans-serif
-	--font-regular: 'Helvetica Neue', Arial, sans-serif
-	// --font-bold: AvenirBold, Arial, sans-serif
-	--font-bold: 'Helvetica Neue', Arial, sans-serif
+	--font-regular: AvenirRegular, Arial, sans-serif
+	// --font-regular: 'Cairo', sans-serif
+	--font-bold: AvenirBold, Arial, sans-serif
+	// --font-bold: 'Helvetica Neue', Arial, sans-serif
 
 *,
 *:before,
@@ -28,19 +28,24 @@
 	
 body
 	font-family: var(--font-regular)
-	font-size: 22px
+	font-size: 21px
+	font-weight: 400
 	
 h1,
 h2
 	font-size: 58px
 	font-family: var(--font-bold)
+	// font-weight: 700
 
 	& + *
 		margin-top: 30px
 
 p, ul, ol
 	// font-size: 22px
-	line-height: 1.6
+	line-height: 1.7
+
+strong
+	font-family: var(--font-bold)
 
 ul
 	margin: 0
@@ -50,13 +55,17 @@ ul
 	li
 		display: flex
 		align-items: center
-		line-height: 1.4
+		line-height: 1.6
+
+		& + li
+			margin-top: 9px
 		
 		&:before
 			content: ''
 			flex: 0 0 12px
 			height: 12px
 			border-radius: 50%
+			margin-right: 14px
 			background-color: #652877
 
 section

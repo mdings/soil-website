@@ -37,7 +37,7 @@ const SetupEventbrite = () => {
 
 const SetupAOS = () => {
     requestAnimationFrame(() => {
-        AOS.init()
+        AOS.init({once: true, mirror: false})
     })
 }
 

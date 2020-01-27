@@ -31,10 +31,10 @@ export default state => (
            <Container>
                 <Column width="12">
                     <Agendaitem code="CHA" date="3/18/2020" location="Lichttoren Eindhoven">Chatbot Discovery Track</Agendaitem>
-                    <Agendaitem code="GOO" date="4/22/2020" location="Lichttoren Eindhoven">Google Assistant Workshop</Agendaitem>
-                    <Agendaitem code="CHA" date="4/25/2020" location="Lichttoren Eindhoven">Chatbot Discovery Track</Agendaitem>
-                    <Agendaitem code="ATO">Atomic Design Training</Agendaitem>
-                    <Agendaitem code="COR">Core Modeling Workshop</Agendaitem>
+                    <Agendaitem delay="100" code="GOO" date="4/22/2020" location="Lichttoren Eindhoven">Google Assistant Workshop</Agendaitem>
+                    <Agendaitem delay="200"code="CHA" date="4/25/2020" location="Lichttoren Eindhoven">Chatbot Discovery Track</Agendaitem>
+                    <Agendaitem delay="300" code="ATO">Atomic Design Training</Agendaitem>
+                    <Agendaitem delay="400" code="COR">Core Modeling Workshop</Agendaitem>
                 </Column>
            </Container>
         </section>

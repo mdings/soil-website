@@ -17,17 +17,15 @@ export default state => (
         <Header>
             <Container>
                 <Column width="7">
-                    <h1 data-aos="fade-in">Chatbot Discovery Track</h1>
+                    <h1 data-aos="fade-up">Chatbot Discovery Track</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">Donderdag 18 maart 2020 - Lichttoren Eindhoven</p>
+                    <Cta to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">inschrijven!</Cta>
                 </Column>
-            </Container>
-            <Container>
-                <p>Donderdag 18 maart 2020 - Lichttoren Eindhoven</p>
-                <Cta to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">inschrijven!</Cta>
             </Container>
                     
         </Header>
         <Container align="center">
-            <Column width="9">
+            <Column width="8">
                 <div class="article__content">
                     <Colorblock>
                         <p>Volgens onderzoek van Gartner wordt in 2020 meer dan 85% van alle digitale klantinteracties zonder menselijke tussenkomst afgehandeld. Veel van deze automatische interacties zullen gebruik maken van chatbots. Maar hoe werken chatbots precies? En waar kun je ze allemaal voor inzetten? In deze discovery track duiken we dieper in deze vragen en kijken we of een chatbot ook waardevol kan zijn voor uw bedrijf.</p>
@@ -60,7 +58,7 @@ export default state => (
         </Container>
             <Authorblock>
             <Container align="center">
-                <Column width="9">
+                <Column width="8">
                     <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque accusamus porro tempore dolores alias quis. Iure perspiciatis, culpa necessitatibus labore veniam voluptas eligendi excepturi maiores delectus consequatur, laboriosam fuga.
                     </p>
