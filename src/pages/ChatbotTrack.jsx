@@ -1,9 +1,11 @@
 import Header from '../components/Header'
 import Column from '../components/Column'
+import Anchor from '../components/Anchor'
 import Cta from '../components/Cta'
 import Container from '../components/Container'
 import Colorblock from '../components/Colorblock'
 import Authorblock from '../components/Authorblock'
+import Registerblock from '../components/Registerblock'
 
 import './training.sass'
 export const Init = (state) => ({
@@ -13,13 +15,14 @@ export const Init = (state) => ({
 
 export default state => (
     <div class="p-training">
+        
         <article>
         <Header>
             <Container>
                 <Column width="7">
                     <h1 data-aos="fade-up">Chatbot Discovery Track</h1>
-                    <p data-aos="fade-up" data-aos-delay="200">Donderdag 18 maart 2020 - Lichttoren Eindhoven</p>
-                    <Cta to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">inschrijven!</Cta>
+                    <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
+                    <Anchor to="nowhere">Contact voor workshop op locatie</Anchor>
                 </Column>
             </Container>
                     
@@ -65,6 +68,7 @@ export default state => (
                 </Column>
             </Container>
         </Authorblock>
+        <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
         </article>
     </div>
 )

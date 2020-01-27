@@ -1,9 +1,10 @@
 import './style.sass'
 import cc from 'classcat'
 
-export default ({align = "left"}, children) => (
+export default ({align = "left", valign = null}, children) => (
     <div class={({
         'c-container': true,
-        'c-container--center': align == 'center'
+        'c-container--center': align == 'center',
+        'c-container--baseline': valign == 'baseline'
     })}>{children}</div>
 )

@@ -3,7 +3,6 @@ import Swiper from 'swiper'
 
 const SetupSwiper = () => {
     setTimeout(() => {
-        console.log(document.querySelector('.swiper-container'))
         const swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
             preloadImages: false,
@@ -24,7 +23,6 @@ const SetupEventbrite = () => {
             console.log('Order complete!');
         };
         
-        console.log(window.EBWidgets.createWidget)
         window.EBWidgets.createWidget({
             widgetType: 'checkout',
             eventId: '91518148245',
@@ -43,4 +41,4 @@ const SetupAOS = () => {
 
 export default [{
 
-}, SetupAOS(), SetupEventbrite(), SetupSwiper()]
+}, SetupAOS(), SetupSwiper()]

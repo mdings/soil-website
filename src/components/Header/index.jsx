@@ -5,8 +5,9 @@ import Column from '../Column'
 
 import './style.sass'
 
-export default (props, children) => (
+export default (props, children) =>  { 
+    return (
     <div class="c-header">
         {children}
     </div>
-)
+)}

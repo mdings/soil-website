@@ -1,23 +1,10 @@
-
-@font-face 
-	font-family: AvenirRegular
-	src: url('../../../static/assets/fonts/AvenirNextLTPro-Regular.otf') format('opentype')
-
-@font-face 
-	font-family: AvenirBold
-	font-weight: bold
-	src: url('../../../static/assets/fonts/AvenirNextLTPro-Bold.otf') format('opentype')
-
 :root
 	--background-color: #ffffff
 	--alt-background-color: #f4f4f4
 	--text-color: #27292B
 	--accent-color: #0000FF
 	--container-width: 640px
-	--font-regular: AvenirRegular, Arial, sans-serif
-	// --font-regular: 'Cairo', sans-serif
-	--font-bold: AvenirBold, Arial, sans-serif
-	// --font-bold: 'Helvetica Neue', Arial, sans-serif
+	--font-regular: acumin-pro, sans-serif
 
 *,
 *:before,
@@ -28,17 +15,17 @@
 	
 body
 	font-family: var(--font-regular)
-	font-size: 21px
+	font-size: 20px
 	font-weight: 400
+	font-style: normal
 	
 h1,
 h2
 	font-size: 58px
-	font-family: var(--font-bold)
-	// font-weight: 700
+	font-weight: 700
 
 	& + *
-		margin-top: 30px
+		margin-top: 10px
 
 p, ul, ol
 	// font-size: 22px
