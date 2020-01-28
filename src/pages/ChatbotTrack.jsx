@@ -22,7 +22,7 @@ export default state => (
                 <Column width="7">
                     <h1 data-aos="fade-up">Chatbot Discovery Track</h1>
                     <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
-                    <Anchor to="nowhere">Contact voor workshop op locatie</Anchor>
+                    <Anchor to="nowhere">Deze training op locatie? Neem contact op</Anchor>
                 </Column>
             </Container>
                     
