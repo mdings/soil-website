@@ -49,26 +49,30 @@ export default state => (
                     </ul>
                     <strong>Na deze workshop weet je</strong>
                     <Colorblock>
-                    <ol>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                        <li>Bla fdfd </li>
-                    </ol>
+                        <ol>
+                            <li>Bla fdfd </li>
+                            <li>Bla fdfd </li>
+                            <li>Bla fdfd </li>
+                            <li>Bla fdfd </li>
+                        </ol>
                     </Colorblock>
                 </div>
             </Column>
         </Container>
             <Authorblock>
-            <Container align="center">
-                <Column width="8">
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque accusamus porro tempore dolores alias quis. Iure perspiciatis, culpa necessitatibus labore veniam voluptas eligendi excepturi maiores delectus consequatur, laboriosam fuga.
-                    </p>
-                </Column>
-            </Container>
+                <Container align="center">
+                    <Column width="8">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque accusamus porro tempore dolores alias quis. Iure perspiciatis, culpa necessitatibus labore veniam voluptas eligendi excepturi maiores delectus consequatur, laboriosam fuga.
+                        </p>
+                    </Column>
+                </Container>
         </Authorblock>
-        <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
+        <Container align="center">
+            <Column width="8">
+                <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
+            </Column>
+        </Container>
         </article>
     </div>
 )

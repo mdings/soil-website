@@ -9,7 +9,9 @@
     "build": "rimraf .cache && rimraf dist && parcel build ./src/index.html --no-source-maps --detailed-report && workbox generateSW workbox-config.js",
     "render-pages": "npm run build && node ./render-pages.js"
   },
-  "browserslist": ["last 1 Chrome versions"],
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "babel": {
     "plugins": [
       [

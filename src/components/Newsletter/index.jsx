@@ -6,7 +6,7 @@ import './style.sass'
 export default () => (
     <section class="c-newsletter">
         <Container align="center">
-            <Column width="9">
+            <Column width="8">
                 <div style={{'border': '10px solid #124554', 'color': '#124554', 'padding': '20px 30px'}} data-aos="fade-up">
                     <Container valign="stretch">
                         <Column width="6">

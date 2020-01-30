@@ -1,14 +1,21 @@
 .c-cta
     display: inline-flex
-    background-color: #E63A4C
+    background-color: #FC3768
     color: #fff
     border-radius: 1px
     align-items: center
     height: 50px
     line-height: 50px
+    position: relative
     text-decoration: none
-    padding: 0 16px
+    border-radius: 2px
+    padding: 0 22px
+    box-shadow: 0 4px mix(#FC3768, #000, 70%)
+
+    &:hover
+        box-shadow: 0 2px mix(#FC3768, #000, 70%)
+        top: 2px  
 
     &.is-disabled
         pointer-events: none
-        background-color: mix(#fafbf8, #000, 80%)
+        box-shadow: 0 4px mix(mix(#fafbf8, #000, 80%), #000, 70%)
