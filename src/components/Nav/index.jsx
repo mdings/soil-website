@@ -3,9 +3,9 @@ import Logo from '../../components/Logo'
 
 import './style.sass'
 
-export default () => (
+export default ({state}, children) => (
     <nav>
-        <Link to="/">
+        <Link to={`/${state.locale}`}>
             <Logo />
         </Link>
     </nav>

@@ -41,13 +41,13 @@ export default state => (
                     <h2 data-aos="fade-up">Workshops &amp; trainingen</h2>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum est magni pariatur facilis, illum vel harum sunt dolor alias et cumque rem quae odit, placeat dolore 
                     accusantium optio impedit!</p>
-                    <Anchor href="/agenda">Bekijk de volledige agenda</Anchor>
+                    <Anchor href="/nl-nl/agenda">Bekijk de volledige agenda</Anchor>
                 </Column>
                 <Column width="8" flex={true}>
-                    <Serviceblock to="/chatbot-discovery-track">Chatbot Discovery Track</Serviceblock>
-                    <Serviceblock to="/chatbot-discovery-track">Google Assistant Workshop</Serviceblock>
-                    <Serviceblock to="/chatbot-discovery-track">Atomic Design Training</Serviceblock>
-                    <Serviceblock to="/chatbot-discovery-track">Core Modeling Workshop</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Chatbot Discovery Track</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Google Assistant Workshop</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Atomic Design Training</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Core Modeling Workshop</Serviceblock>
                 </Column>
             </Container>
         </section>

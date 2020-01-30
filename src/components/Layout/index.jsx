@@ -9,7 +9,7 @@ import './global.sass'
 // Root application view
 export default (state) => (
     <div>
-        <Nav />
+        <Nav state={state} />
         {Router(state)}
         <Newsletter />
         <Footer />

@@ -40,5 +40,4 @@ const SetupAOS = () => {
 }
 
 export default [{
-
 }, SetupAOS(), SetupSwiper()]

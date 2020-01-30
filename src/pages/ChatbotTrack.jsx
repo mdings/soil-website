@@ -33,11 +33,11 @@ export default state => (
                     <Colorblock>
                         <p>Volgens onderzoek van Gartner wordt in 2020 meer dan 85% van alle digitale klantinteracties zonder menselijke tussenkomst afgehandeld. Veel van deze automatische interacties zullen gebruik maken van chatbots. Maar hoe werken chatbots precies? En waar kun je ze allemaal voor inzetten? In deze discovery track duiken we dieper in deze vragen en kijken we of een chatbot ook waardevol kan zijn voor uw bedrijf.</p>
                     </Colorblock>
-                    <p>
+                    <p data-aos="fade-up">
                         <strong>Voor wie?</strong>
                         Deze track is bedoeld voor product of business owners, (online) marketeers, innovatie managers en eigenlijk iedereen die een chatbot op zijn of haar verlanglijstje heeft staan maar toch nog veel vragen heeft. We kijken naar de werking van een chatbot zonder daarbij al te diep in de techniek te duiken. Toch weet je na afloop wat er technisch gezien nodig is om een chatbot succesvol te maken.
                     </p>
-                    <ul>
+                    <ul data-aos="fade-up">
                         <strong>Topics</strong>
                         <li>Hoe werkt een chatbot? (Machine Learning vs. NLP)</li>
                         <li>Wat en wie heb je nodig voor een chatbot?</li>
@@ -47,7 +47,7 @@ export default state => (
                         <li>Waar verdient een chatbot zichzelf terug?</li>
                         <li>Waar moet een goede chatbot aan voldoen?</li>
                     </ul>
-                    <strong>Na deze workshop weet je</strong>
+                    <strong data-aos="fade-up">Na deze workshop weet je</strong>
                     <Colorblock>
                         <ol>
                             <li>Bla fdfd </li>
@@ -62,7 +62,7 @@ export default state => (
             <Authorblock>
                 <Container align="center">
                     <Column width="8">
-                        <p>
+                        <p data-aos="fade-up">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque accusamus porro tempore dolores alias quis. Iure perspiciatis, culpa necessitatibus labore veniam voluptas eligendi excepturi maiores delectus consequatur, laboriosam fuga.
                         </p>
                     </Column>

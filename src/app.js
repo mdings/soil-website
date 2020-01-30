@@ -4,13 +4,26 @@ import { hyperstatic } from 'hyperstatic'
 import routes from './app/routes'
 import init from './app/init'
 import Layout from './components/Layout'
+import { PopState } from './app/subscriptions'
 
+const GotoTop = (state, ok) => {
+    console.log('going to top')
+    return ({...state})
+}
+
+console.log(init)
 // Initialize the app
 hyperstatic({
     routes,
-    init,
+    init: {
+        ...init,
+        locale: 'nl-nl'
+    },
     view: Layout,
-    node: document.getElementById('app')
+    node: document.getElementById('app'),
+    subscriptions: state => [PopState({
+        action: GotoTop
+    })]
 })
 
 // Enable the service worker when running the build command

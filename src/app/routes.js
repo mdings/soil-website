@@ -1,5 +1,5 @@
 export default {
-  '/': import('../pages/Home'),
-  '/agenda': import('../pages/Agenda'),
-  '/chatbot-discovery-track': import('../pages/ChatbotTrack')
+  '/nl-nl': import('../pages/Home'),
+  '/nl-nl/agenda': import('../pages/Agenda'),
+  '/nl-nl/chatbot-discovery-track': import('../pages/ChatbotTrack')
 }
