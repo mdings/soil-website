@@ -23,6 +23,7 @@ const SetupEventbrite = () => {
             console.log('Order complete!');
         };
         
+
         window.EBWidgets.createWidget({
             widgetType: 'checkout',
             eventId: '91518148245',
@@ -33,11 +34,18 @@ const SetupEventbrite = () => {
     })
 }
 
+const SetupCognito = () => {
+    requestAnimationFrame(() => {
+        Cognito.load('forms', { id: '1' })
+    })
+}
+
 const SetupAOS = () => {
     requestAnimationFrame(() => {
+        Cognito.load("forms", { id: "1" })
         AOS.init({once: true, mirror: false})
     })
 }
 
 export default [{
-}, SetupAOS(), SetupSwiper()]
+}, SetupAOS(), SetupSwiper(), SetupCognito()]

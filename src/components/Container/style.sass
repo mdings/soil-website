@@ -1,10 +1,16 @@
+@import "../Layout/include-media"
+
 .c-container
     width: 100%
     max-width: 1200px
     margin: 0 auto
-    padding: 0 30px
+    padding: 0 40px
+    flex-direction: column
     display: flex
     align-items: center
+
+    @include media(">tablet")
+        flex-direction: row 
 
     .c-container
         padding: 0

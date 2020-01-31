@@ -6,10 +6,59 @@
 
 .c-newsletter
     background-color: #eeeeeb
+    
+    .cognito
+        a
+            position: absolute
+            left: -100000px
 
-    iframe
-        height: 100%
+    .c-label,
+    .c-editor
+        padding: 0!important
+
+    .c-action
+        margin: 0!important
+
+    #c-submit-button
+        margin: 0!important
+        float: none!important
+        min-width: 200px
         
+    .c-label
+        &:after
+            color: #FC3768!important // this is the asterisk that marks the required field
+
+    .c-validation
+        padding: 11px 15px
+        font-size: 16px!important
+        margin-right: 7px
+        color: #124554!important
+        background-color: rgba(#124554, .2)!important
+
+    .c-button
+        border: none
+        height: 50px
+        font-size: inherit
+        background-color: #ca2c53
+        color: #fff
+
+    label
+        font-size: 14px
+
+    input
+        background: transparent
+        outline: none
+        font-size: 18px
+        border: none
+        height: 30px
+        line-height: 30px
+        padding: 0 0
+        border-bottom: 4px solid #124554
+
+        &::placeholder
+            color: #333
+            opacity: .4
+
     h4
         font-size: 40px
         font-weight: 700

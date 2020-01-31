@@ -1,14 +1,19 @@
+@import "../Layout/include-media"
+
 .c-service-block
     display: flex
     align-self: flex-start
     position: relative
     flex: 0 0 50%
     padding-top: 50%
-    font-size: 30px
-    line-height: 1.3
+    font-size: 1.5rem
+    line-height: 1.2
     font-family: var(--font-bold)
     // font-weight: 700
     overflow: hidden
+
+    @include media(">=desktop")
+        font-size: 1.7rem
 
     &:hover
 
