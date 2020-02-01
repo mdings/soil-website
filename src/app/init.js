@@ -1,5 +1,6 @@
 import AOS from 'aos'
-import Swiper from 'swiper'
+
+const fx = a => b => [a,b]
 
 const SetupSwiper = () => {
     setTimeout(() => {
@@ -47,5 +48,16 @@ const SetupAOS = () => {
     })
 }
 
+const SetupRellax = fx((dispatch, props) => {
+    console.log('ok')
+    // dispatch(DoRellax)
+   
+    setTimeout(() => {
+        const rellax = new Rellax('.rellax', {
+        });
+        rellax.refresh()
+    }, 400)
+}) 
+
 export default [{
-}, SetupAOS(), SetupSwiper(), SetupCognito()]
+}, SetupAOS(), SetupCognito()]

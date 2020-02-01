@@ -2,10 +2,14 @@
 
 .c-column
     width: 100%
+    
+    & + .c-column
+        margin-top: 2rem
 
     @include media(">tablet")
         & + .c-column
             margin-left: 75px
+            margin-top: 0
 
 
 .c-column--flex

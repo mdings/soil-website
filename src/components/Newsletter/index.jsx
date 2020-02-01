@@ -4,7 +4,6 @@ import Column from '../../components/Column'
 import './style.sass'
 
 const LoadForm = state => {
-    console.log(Cognito)
     return {...state}
 }
 export default () => (

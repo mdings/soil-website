@@ -1,6 +1,5 @@
 import { Link } from 'hyperstatic'
 
-console.log(Link)
 import './style.sass'
 
 export default ({to}, children) => (

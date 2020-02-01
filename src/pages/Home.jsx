@@ -1,3 +1,4 @@
+
 import Anchor from '../components/Anchor'
 import Header from '../components/Header'
 import Serviceblock from '../components/Serviceblock'
@@ -6,6 +7,7 @@ import Column from '../components/Column'
 import Cta from '../components/cta'
 import Container from '../components/Container'
 import Newsletter from '../components/Newsletter'
+import Rellax from 'rellax'
 
 import './home.sass'
 
@@ -17,6 +19,9 @@ export const Init = (state) => ({
 export default state => (
     <div class="p-home">
         <Header>
+            <div data-observe-parallax>
+                <div class="background rellax" data-rellax-speed="-3"></div>
+            </div>
             <Container>
                 <Column width="8">
                     <Callout>We hoeven niet meer conservatief te zijn</Callout>
