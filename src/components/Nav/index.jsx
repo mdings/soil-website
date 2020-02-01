@@ -8,5 +8,6 @@ export default ({state}, children) => (
         <Link to={`/${state.locale}`}>
             <Logo />
         </Link>
+        <span>Nieuwe data beschikbaar!&nbsp; <Link to={`${state.locale}/agenda`}>Check onze agenda! &rarr;</Link></span>
     </nav>
 )

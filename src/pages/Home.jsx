@@ -20,23 +20,24 @@ export default state => (
     <div class="p-home">
         <Header>
             <div data-observe-parallax>
-                <div class="background rellax" data-rellax-speed="-3"></div>
+                <div class="background rellax" data-rellax-speed="1"></div>
             </div>
-            <Container>
-                <Column width="8">
-                    <Callout>We hoeven niet meer conservatief te zijn</Callout>
-                    <p data-aos="fade-up" data-aos-delay="200">De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Je wilt mee in deze ontwikkeling, maar waar moet je beginnen?</p>
-                    </Column>
-            </Container>
+            <div class="rellax" data-rellax-speed="-4">
+                <Container>
+                    <Column width="8">
+                            <Callout>De brug naar nieuwe mogelijkheden.</Callout>
+                            <p data-aos="fade-up" data-aos-delay="200">De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Je wilt mee in deze ontwikkeling, maar waar moet je beginnen?</p>
+                        </Column>
+                </Container>
+            </div>
         </Header>
         <section class="about-us">
             <Container>
                 <Column width="6">
                     <h1 data-aos="fade-up">Wat wij doen</h1>
-                    <p data-aos="fade-up">Wij nemen individuen en organisaties in het MKB bij de hand en maken gecompliceerde innovatieve thema's eenvoudig. Dat doen we door middel van trainingen en programma’s. Begin bij het begin. Welkom bij Soil.</p>
+                    <p data-aos="fade-up">Wij nemen individuen en organisaties bij de hand en maken gecompliceerde innovatieve thema's eenvoudig. Dat doen we door middel van trainingen en programma’s.</p><p data-aos="fade-up">Begin bij het begin. Welkom bij Soil</p>
                 </Column>
                 <Column width="6">
-                    Dit is een button
                 </Column>
             </Container>
         </section>
@@ -50,7 +51,7 @@ export default state => (
                 </Column>
                 <Column width="8" flex={true}>
                     <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Chatbot Discovery Track</Serviceblock>
-                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Google Assistant Workshop</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/google-assistant-workshop`}>Google Assistant Workshop</Serviceblock>
                     <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Atomic Design Training</Serviceblock>
                     <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Core Modeling Workshop</Serviceblock>
                 </Column>

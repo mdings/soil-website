@@ -1,6 +1,11 @@
 import { Link } from 'hyperstatic'
-
 import './style.sass'
+
+const SetPosition = (state) => {
+    event.preventDefault()
+    console.log('k')
+    return {...state}
+}
 
 export default ({to}, children) => (
     <Link to={to} class="c-service-block" data-aos="zoom-in">

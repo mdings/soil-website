@@ -4,12 +4,15 @@
     width: 100%
     max-width: 1200px
     margin: 0 auto
-    padding: 0 100px
+    padding: 0 15px
     flex-direction: column
     display: flex
     align-items: center
 
-    @include media(">tablet")
+    @include media("<desktop") 
+        padding: 0 100px
+
+    @include media(">=tablet")
         flex-direction: row 
 
     .c-container

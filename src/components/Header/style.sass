@@ -9,6 +9,7 @@
     z-index: 0
     overflow: hidden
 
+
     .layer
         // border: 1px solid red
         width: 100%
@@ -18,7 +19,11 @@
         // top: 100px
         z-index: 0
         color: #fff
-        padding: 3rem 0
+        padding: 3.8rem 0
+        background: #1c2041
+
+        p
+            font-size: 1.2rem
 
         .background
             position: absolute
@@ -27,8 +32,10 @@
             top: 0
             bottom: 0
             background: #1c2041 url(../../../static/assets/Soil_Website_Header_Paars_Compleet.png)
+            background: #1c2041 url(https://media0.giphy.com/media/PmYFV3urYHA7y35cRQ/giphy.gif?cid=790b7611ff27308c7d52a5b10a8e5f5d34df0ed5f5968521&rid=giphy.gif)
             background-size: cover
             background-position: center
+            opacity: .7
 
         @include media(">=desktop")
             padding: 7rem 0

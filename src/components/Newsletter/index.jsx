@@ -13,7 +13,7 @@ export default () => (
                 <div style={{'border': '10px solid #124554', 'color': '#124554', 'padding': '20px 30px'}} data-aos="fade-up">
                     <Container valign="stretch">
                         <Column width="6">
-                            <h4><span>Altijd op de hoogte blijven?</span></h4>
+                            <h4><span>Op de hoogte blijven?</span></h4>
                             <p>Wil je weten wanneer we nieuwe workshops of trainigen doen? Laat dan je e-mail adres achter zodat we je iets kunnen laten weten!</p>
                         </Column>
                         <Column width="6">
