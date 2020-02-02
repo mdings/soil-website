@@ -1,14 +1,9 @@
 @import "../Layout/include-media"
 
 .c-header
-    // background-color: #ededed
-    background: linear-gradient(180deg,#f9f9fa,#f2f2f4)
+    background-color: #ededf1
     color: var(--text-color)
-    // position: fixed
     position: relative
-    z-index: 0
-    overflow: hidden
-
 
     .layer
         // border: 1px solid red
@@ -19,7 +14,7 @@
         // top: 100px
         z-index: 0
         color: #fff
-        padding: 3.8rem 0
+        padding: 3.3rem 0 3.8rem
         background: #1c2041
 
         p
@@ -31,18 +26,23 @@
             right: 0
             top: 0
             bottom: 0
-            background: #1c2041 url(../../../static/assets/Soil_Website_Header_Paars_Compleet.png)
             background: #1c2041 url(https://media0.giphy.com/media/PmYFV3urYHA7y35cRQ/giphy.gif?cid=790b7611ff27308c7d52a5b10a8e5f5d34df0ed5f5968521&rid=giphy.gif)
             background-size: cover
             background-position: center
-            opacity: .7
+            opacity: .2
+
+            @include media(">=desktop")
+                opacity: .7
 
         @include media(">=desktop")
             padding: 7rem 0
 
     .p-training &
-        margin-bottom: -150px
-        padding: 80px 0 180px
+        margin-bottom: -90px
+        padding: 50px 0 160px
 
+        @include media("<tablet")
+            padding: 40px 0 110px
+            
         .c-register-block
-            margin: 10px 0
+            margin: 35px 0 30px

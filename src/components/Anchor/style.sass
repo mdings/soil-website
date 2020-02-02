@@ -9,9 +9,7 @@
     font-weight: bold
     position: relative
     z-index: 9
-
-    // @include media(">=desktop")
-    //     font-size: .75rem
+    margin-bottom: 4px // compensate for the border
 
     &:hover
         &:before
@@ -27,7 +25,8 @@
         left: 0
         width: calc(100% - 20px)
         height: 15px
-        bottom: -8px
+        bottom: -4px
+        box-decoration-break: clone
 
     svg
         transform: translateY(2px)

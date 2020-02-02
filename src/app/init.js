@@ -43,7 +43,6 @@ const SetupCognito = () => {
 
 const SetupAOS = () => {
     requestAnimationFrame(() => {
-        Cognito.load("forms", { id: "1" })
         AOS.init({once: true, mirror: false})
     })
 }
@@ -60,4 +59,4 @@ const SetupRellax = fx((dispatch, props) => {
 }) 
 
 export default [{
-}, SetupAOS(), SetupCognito()]
+}, SetupAOS()]

@@ -21,8 +21,8 @@ export default state => (
             <Container>
                 <Column width="7">
                     <h1 data-aos="fade-up">Google Assistant Workshop</h1>
-                    <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
-                    <Anchor to="nowhere">Deze training op locatie? Neem contact op</Anchor>
+                    <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
+                    {/* Deze training op locatie? <Anchor to="nowhere">Neem contact op</Anchor> */}
                 </Column>
             </Container>
                     
@@ -30,8 +30,10 @@ export default state => (
         <Container align="center">
             <Column width="8">
                 <div class="article__content">
-                    <Colorblock>
-                        <p>Volgens onderzoek van Gartner wordt in 2020 meer dan 85% van alle digitale klantinteracties zonder menselijke tussenkomst afgehandeld. Veel van deze automatische interacties zullen gebruik maken van chatbots. Maar hoe werken chatbots precies? En waar kun je ze allemaal voor inzetten? In deze discovery track duiken we dieper in deze vragen en kijken we of een chatbot ook waardevol kan zijn voor uw bedrijf.</p>
+                    <Colorblock type="2">
+                        <div data-aos="fade-up">
+                            <p>Volgens onderzoek van Gartner wordt in 2020 meer dan 85% van alle digitale klantinteracties zonder menselijke tussenkomst afgehandeld. Veel van deze automatische interacties zullen gebruik maken van chatbots. Maar hoe werken chatbots precies? En waar kun je ze allemaal voor inzetten? In deze discovery track duiken we dieper in deze vragen en kijken we of een chatbot ook waardevol kan zijn voor uw bedrijf.</p>
+                        </div>
                     </Colorblock>
                     <p data-aos="fade-up">
                         <strong>Voor wie?</strong>
@@ -47,15 +49,17 @@ export default state => (
                         <li>Waar verdient een chatbot zichzelf terug?</li>
                         <li>Waar moet een goede chatbot aan voldoen?</li>
                     </ul>
-                    <strong data-aos="fade-up">Na deze workshop weet je</strong>
-                    <Colorblock>
-                        <ol>
-                            <li>Bla fdfd </li>
-                            <li>Bla fdfd </li>
-                            <li>Bla fdfd </li>
-                            <li>Bla fdfd </li>
-                        </ol>
-                    </Colorblock>
+                    <div data-aos="fade-up">
+                        <strong data-aos="fade-up">Na deze workshop weet je</strong>
+                        <Colorblock type="2">
+                            <ol>
+                                <li>Bla fdfd </li>
+                                <li>Bla fdfd </li>
+                                <li>Bla fdfd </li>
+                                <li>Bla fdfd </li>
+                            </ol>
+                        </Colorblock>
+                    </div>
                 </div>
             </Column>
         </Container>
@@ -70,7 +74,7 @@ export default state => (
         </Authorblock>
         <Container align="center">
             <Column width="8">
-                <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245">Donderdag 18 maart 2020 - Lichttoren Eindhoven</Registerblock>
+                <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
             </Column>
         </Container>
         </article>

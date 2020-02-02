@@ -4,7 +4,7 @@ import { hyperstatic } from 'hyperstatic'
 import routes from './app/routes'
 import init from './app/init'
 import Layout from './components/Layout'
-import { PopState, Parallax, Navigate } from './app/subscriptions'
+import { PopState, Navigate, SetupCognito } from './app/subscriptions'
 
 // Initialize the app
 hyperstatic({
@@ -17,8 +17,8 @@ hyperstatic({
     node: document.getElementById('app'),
     subscriptions: state => [
         PopState(),
-        Parallax(),
-        Navigate()
+        Navigate(),
+        SetupCognito()
     ]
 })
 

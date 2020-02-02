@@ -1,6 +1,3 @@
-import Rellax from 'rellax'
-
-
 const subFx = a => b => [a, b]
 export const PopState = subFx((dispatch, props) => {
   const handleLocationChange = ev => {
@@ -26,17 +23,15 @@ export const Navigate = subFx((dispatch, props) => {
         })
     })
     observer.observe(document.body, { childList: true, subtree: true })
-
 })
 
-export const Parallax = subFx((dispatch, props) => {
+export const SetupCognito = subFx((dispatch, props) => {
     const observer = new MutationObserver(mutations => {
-        if (document.contains(document.querySelector('[data-observe-parallax]'))) {
-            const rellax = new Rellax('.rellax', {});
+        if (document.contains(document.querySelector('[data-cognito-outlet]'))) {
+            Cognito.load('forms', { id: '1' })
             observer.disconnect()
         }
     })
 
     observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
-
 })

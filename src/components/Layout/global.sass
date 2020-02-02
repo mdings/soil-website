@@ -34,7 +34,7 @@ h2
 	line-height: 1.1
 
 	& + *
-		margin-top: 1rem
+		margin-top: 1.5rem
 
 		@include media(">=desktop")
 			margin-top: 2.2rem
@@ -46,14 +46,25 @@ p, ul, ol
 strong
 	font-family: var(--font-bold)
 
+ol 
+	li
+		&:before
+			content: ''
+			display: inline-block
+			height: 100%
+			width: 5px
+
+		& + li
+			margin-top: 7px
 ul
 	margin: 0
 	padding: 0
 	list-style: none
+	max-width: 700px
 
 	li
 		display: flex
-		align-items: center
+		align-items: flex-start
 		line-height: 1.6
 
 		& + li
@@ -61,14 +72,15 @@ ul
 		
 		&:before
 			content: ''
-			flex: 0 0 12px
-			height: 12px
+			flex: 0 0 10px
+			height: 10px
 			border-radius: 50%
 			margin-right: 14px
-			background-color: #652877
+			background-color: #444
+			margin-top: .6rem
 
 section
-	padding: 2rem 0
+	padding: 2rem 0 2.3rem
 
 	@include media(">=desktop")
 		padding: 7rem 0	
@@ -76,5 +88,8 @@ section
 	p 
 
 		& + *
-			margin-top: 35px
+			margin-top: 1.5rem
+
+			@include media(">=desktop")
+				margin-top: 2.2rem
 

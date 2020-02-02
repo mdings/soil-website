@@ -4,12 +4,10 @@
     display: block
     color: var(--background-color)
     font-family: var(--font-bold)
-    font-size: 3rem
+    font-size: 2.5rem
     font-weight: bold
     line-height: 1.2
+    margin-bottom: 1.8rem
 
-    & + *
-        margin-top: 1rem
-
-        @include media(">=desktop")
-            margin-top: 3rem
+    @include media(">=desktop")
+        margin-bottom: 3rem

@@ -1,3 +1,5 @@
+@import "../Layout/include-media"
+
 footer
     padding: 20px 40px
     font-size: 15px
@@ -5,5 +7,29 @@ footer
     align-items: center
     justify-content: space-between
 
+    & > div
+        flex-direction: column
+        display: flex
+        flex-wrap: wrap
+
+        @include media(">=tablet")
+            flex-direction: row
+
+            span
+                display: flex
+                align-items: center
+
+
+                & + span
+                    &:before
+                        display: inline-block
+                        content: ''
+                        width: 4px
+                        height: 4px
+                        margin: 0 6px
+                        border-radius: 50%
+                        background-color: #333333
+                        transform: translateY(1px)
+        
     .c-logo
         width: 60px

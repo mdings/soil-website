@@ -1,21 +1,48 @@
+@import "../Layout/include-media"
 
 nav
     background-color: #fff
-    padding: 30px 40px
-    display: flex
-    align-items: center
-    justify-content: space-between
+    padding: 30px 15px
+    text-align: center
+    
+
+    @include media(">=tablet")
+        align-items: center
+        display: flex
+        justify-content: space-between
+        
 
     span
-        font-size: .8rem
         display: inline-flex
-        border-radius: 20px
-        background-color: #FBC763
+        flex-wrap: wrap
+        justify-content: center
         color: #4d3d1e
-        height: 45px
-        line-height: 45px
-        padding: 0 20px
+        align-items: baseline
+
+        svg 
+            width: 15px
+            height: auto
+            margin-left: 10px
+
+        @include media(">=tablet")
+            font-size: .8rem
+
+        @include media("<desktop")
+            margin-top: 20px
 
         a
+            height: 45px
+            line-height: 43px
+            border-radius: 20px
+            padding: 0 20px
+            background-color: #FBC763
             color: inherit
             font-weight: bold
+            text-decoration: none
+            display: inline-flex
+
+            @include media(">tablet")
+                margin-left: 10px
+
+            @include media("<desktop")
+                margin-top: 10px

@@ -1,3 +1,5 @@
+@import "../components/Layout/include-media"
+
 .p-training
     .article__content
         strong
@@ -5,9 +7,12 @@
             font-size: 30px
             margin-bottom: 15px
         
+        // haha cool one!
+        & > * + *:not(.c-color-block)
+            margin-top: 4rem
 
-        & > *
-            margin-top: 80px
+            @include media("<desktop")
+                margin-top: 2rem
 
     .c-register-block
         margin: 45px 0

@@ -1,7 +1,11 @@
 import './style.sass'
+import cc from 'classcat'
 
-export default (props, children) => (
-    <div class="c-color-block" data-aos="fade-up" data-aos-delay="300">
+export default ({type = 1}, children) => (
+    <div class={cc({
+        'c-color-block': true,
+        'c-color-block--type-2': type == 2
+    })}>
         {children}
     </div>
 )

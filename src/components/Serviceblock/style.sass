@@ -6,7 +6,7 @@
     position: relative
     flex: 0 0 50%
     padding-top: 50%
-    font-size: 1.5rem
+    font-size: 1.3rem
     line-height: 1.2
     font-family: var(--font-bold)
     // font-weight: 700
@@ -15,17 +15,16 @@
     @include media(">=desktop")
         font-size: 1.7rem
 
-    &:hover
+        &:hover
+            span
+                transform: translateX(0)
 
-        span
-            transform: translateX(0)
+                svg
+                    opacity: 1
 
-            svg
+            .c-service-block__more
+                transform: translateY(0px)
                 opacity: 1
-
-        .c-service-block__more
-            transform: translateY(0px)
-            opacity: 1
 
     div
         display: flex
@@ -34,13 +33,18 @@
     & > span
         position: absolute
         display: flex
-        top: 20px
-        right: 80px
-        left: 15px
+        top: 15px
+        right: 5px
+        left: 5px
         font-weight: bolder
         align-items: flex-start
         transition: all 150ms cubic-bezier(.455, .03, .515, .955)
         transform: translateX(-25px)
+
+        @include media(">=tablet")
+            top: 20px
+            right: 80px
+            left: 15px
 
         svg
             transition: all 150ms cubic-bezier(.455, .03, .515, .955)
@@ -63,19 +67,23 @@
 
     &:nth-child(3)
         background-color: #000D48
-        box-shadow: inset 0 -10px mix(#000D48, #000, 70%)
+        background-color: #000
         color: #fff
+        pointer-events: none
 
     &:nth-child(4)
         background-color: #FBC763
-        box-shadow: inset 0 -10px mix(#FBC763, #000, 70%)
+        background-color: #000
+        // box-shadow: inset 0 -10px mix(#FBC763, #000, 70%)
         color: inherit
+        color: #fff
+        pointer-events: none
 
-.c-service-block__more
-    display: block
-    transition: all 350ms cubic-bezier(.455, .03, .515, .955)
-    font-weight: normal
-    font-size: 20px
-    margin-top: 30px
-    opacity: 0
-    transform: translateY(10px)
+.c-service-block__disabled
+   font-weight: normal
+   font-size: 1rem
+   display: none
+   margin-top: 2rem
+
+   &.is-visible
+       display: block
