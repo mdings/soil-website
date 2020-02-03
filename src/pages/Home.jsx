@@ -54,7 +54,7 @@ export default state => (
                 <Column width="8" flex={true}>
                     <Serviceblock to={`/${state.locale}/chatbot-discovery-track`}>Chatbot Discovery Track</Serviceblock>
                     <Serviceblock to={`/${state.locale}/google-assistant-workshop`}>Google Assistant Workshop</Serviceblock>
-                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`} disabled>Atomic Design Training</Serviceblock>
+                    <Serviceblock to={`/${state.locale}/chatbot-discovery-track`} disabled>Digital Transformation</Serviceblock>
                     <Serviceblock to={`/${state.locale}/chatbot-discovery-track`} disabled>Core Modeling Workshop</Serviceblock>
                 </Column>
             </Container>
