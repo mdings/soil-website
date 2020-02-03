@@ -2,9 +2,10 @@ const renderPages = require('hyperstatic/src/renderPages');
 
 (async () => {
   let pages = [
-    '/',
-    '/example-page',
-    '/counter'
+    '/nl-nl',
+    '/nl-nl/agenda',
+    '/nl-nl/chatbot-discovery-track',
+    '/nl-nl/google-assistant-workshop'
   ]
 
   renderPages(pages)

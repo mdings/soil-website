@@ -1,7 +1,25 @@
+
+const LoadScript = (url, callback) => {
+    const script = document.createElement('script')
+    script.type = "text/javascript"
+    if (script.readyState) { // only required for IE <9
+        script.onreadystatechange = () => {
+            if (script.readyState === "loaded" || script.readyState === "complete") {
+                script.onreadystatechange = null
+                callback()
+            }
+        }
+    } else {
+        script.onload = callback
+    }
+
+    script.src = url
+    document.getElementsByTagName('head')[0].appendChild(script)
+}
+
 const subFx = a => b => [a, b]
 export const PopState = subFx((dispatch, props) => {
   const handleLocationChange = ev => {
-      console.log('using backword and forward')
     // dispatch([props.action, window.location.pathname + window.location.search])
   }
   // This only handles the back butto scenario
@@ -17,7 +35,6 @@ export const Navigate = subFx((dispatch, props) => {
         mutations.forEach(mutation => {
             if (oldHref != document.location.href) {
                 oldHref = document.location.href
-                console.log(document.location.href)
                 document.documentElement.scrollTop = '0px'
             }
         })
@@ -26,12 +43,14 @@ export const Navigate = subFx((dispatch, props) => {
 })
 
 export const SetupCognito = subFx((dispatch, props) => {
-    const observer = new MutationObserver(mutations => {
-        if (document.contains(document.querySelector('[data-cognito-outlet]'))) {
-            Cognito.load('forms', { id: '1' })
-            observer.disconnect()
-        }
+    LoadScript('https://services.cognitoforms.com/s/OJAdgUmTCESLvGBnnaOGOg', () => {
+        const observer = new MutationObserver(mutations => {
+            if (document.contains(document.querySelector('[data-cognito-outlet]'))) {
+                Cognito.load('forms', { id: '1' })
+                observer.disconnect()
+            }
+        })
+    
+        observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
     })
-
-    observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
 })

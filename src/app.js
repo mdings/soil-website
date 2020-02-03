@@ -6,7 +6,12 @@ import init from './app/init'
 import Layout from './components/Layout'
 import { PopState, Navigate, SetupCognito } from './app/subscriptions'
 
-// Initialize the app
+// Go the default Dutch locale when hitting the top-level
+const { pathname } = document.location
+if (pathname && pathname == '/') {
+    history.replaceState(null, '', 'nl-nl')
+}
+
 hyperstatic({
     routes,
     init: {
