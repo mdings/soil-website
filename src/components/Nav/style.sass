@@ -6,7 +6,7 @@ nav
     text-align: center
     
 
-    @include media(">=tablet")
+    @include media(">500px")
         align-items: center
         display: flex
         justify-content: space-between
@@ -19,6 +19,12 @@ nav
         color: #4d3d1e
         align-items: baseline
 
+        @include media(">500px")
+            justify-content: flex-end
+
+        @include media("<=500px")
+            margin-top: 20px
+
         svg 
             width: 15px
             height: auto
@@ -26,9 +32,6 @@ nav
 
         @include media(">=tablet")
             font-size: .8rem
-
-        @include media("<desktop")
-            margin-top: 20px
 
         a
             height: 45px
