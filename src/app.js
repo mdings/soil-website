@@ -12,6 +12,7 @@ if (pathname && pathname == '/') {
     history.replaceState(null, '', 'nl-nl')
 }
 
+console.log('ok check dit')
 hyperstatic({
     routes,
     init: {
