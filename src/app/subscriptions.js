@@ -2,6 +2,7 @@
 const LoadScript = (url, callback) => {
     const script = document.createElement('script')
     script.type = "text/javascript"
+    script.defer = true
     if (script.readyState) { // only required for IE <9
         script.onreadystatechange = () => {
             if (script.readyState === "loaded" || script.readyState === "complete") {
@@ -43,14 +44,13 @@ export const Navigate = subFx((dispatch, props) => {
 })
 
 export const SetupCognito = subFx((dispatch, props) => {
-    LoadScript('https://services.cognitoforms.com/s/OJAdgUmTCESLvGBnnaOGOg', () => {
-        const observer = new MutationObserver(mutations => {
-            if (document.contains(document.querySelector('[data-cognito-outlet]'))) {
-                Cognito.load('forms', { id: '1' })
+    const observer = new MutationObserver(mutations => {
+            if (document.contains(document.querySelector('.cognito'))) {
+                LoadScript('https://services.cognitoforms.com/s/OJAdgUmTCESLvGBnnaOGOg', () => {
+                    Cognito.load('forms', { id: '1' })
+                })
                 observer.disconnect()
             }
         })
-    
-        observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
-    })
+    observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
 })
