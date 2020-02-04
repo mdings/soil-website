@@ -7,7 +7,8 @@
   "scripts": {
     "start": "parcel src/index.html --no-cache",
     "build": "rimraf .cache && rimraf dist && parcel build ./src/index.html --no-source-maps --detailed-report && workbox generateSW workbox-config.js",
-    "render-pages": "npm run build && node ./render-pages.js"
+    "render-pages": "npm run build && node ./render-pages.js",
+    "deploy": "npm run render-pages && now dist --name soil"
   },
   "browserslist": [
     "defaults"
@@ -35,7 +36,8 @@
     "hyperapp": "^2.0.3",
     "rellax": "^1.12.0",
     "sanitize.css": "^10.0.0",
-    "swiper": "^5.3.0"
+    "swiper": "^5.3.0",
+    "url-pattern": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",

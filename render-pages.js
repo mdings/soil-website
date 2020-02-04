@@ -1,4 +1,4 @@
-const renderPages = require('hyperstatic/src/renderPages');
+const renderPages = require('./src/hyperstatic/renderPages');
 
 (async () => {
   let pages = [
