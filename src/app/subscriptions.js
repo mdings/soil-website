@@ -45,12 +45,12 @@ export const Navigate = subFx((dispatch, props) => {
 
 export const SetupCognito = subFx((dispatch, props) => {
     const observer = new MutationObserver(mutations => {
-            if (document.contains(document.querySelector('.cognito'))) {
-                LoadScript('https://services.cognitoforms.com/s/OJAdgUmTCESLvGBnnaOGOg', () => {
-                    Cognito.load('forms', { id: '1' })
-                })
-                observer.disconnect()
-            }
-        })
+        if (document.contains(document.querySelector('.cognito'))) {
+            LoadScript('https://services.cognitoforms.com/s/OJAdgUmTCESLvGBnnaOGOg', () => {
+                Cognito.load('forms', { id: '1' })
+            })
+            observer.disconnect()
+        }
+    })
     observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true})
 })

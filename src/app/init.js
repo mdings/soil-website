@@ -4,7 +4,7 @@ const fx = a => b => [a,b]
 
 const SetupAOS = () => {
     requestAnimationFrame(() => {
-        AOS.init({once: false, mirror: false})
+        AOS.init({once: true, mirror: true})
     })
 }
 
