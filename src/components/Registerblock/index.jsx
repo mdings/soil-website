@@ -1,5 +1,5 @@
-import Container from '../../components/container'
-import Cta from '../../components/cta'
+import Container from '../../components/Container'
+import Cta from '../../components/Cta'
 
 import './style.sass'
 
