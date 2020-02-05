@@ -23,7 +23,7 @@ export default state => (
             <Container>
                 <Column width="7">
                     <h1 data-aos="fade-up">Chatbot Discovery Track</h1>
-                    <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 19 maart 2020</strong><br />Lichttoren Eindhoven</Registerblock>
+                    <Registerblock to="https://www.eventbrite.nl/e/92785133833"><strong>Woensdag 18 maart 2020</strong><br />Lichttoren Eindhoven</Registerblock>
                     {/* Deze training op locatie? <Anchor to="nowhere">Neem contact op</Anchor> */}
                 </Column>
             </Container>
@@ -83,7 +83,7 @@ export default state => (
         </Authorblock>
         <Container align="center">
             <Column width="8">
-                <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 19 maart 2020</strong><br />Lichttoren Eindhoven</Registerblock>
+                <Registerblock to="https://www.eventbrite.nl/e/92785133833"><strong>Woensdag 18 maart 2020</strong><br />Lichttoren Eindhoven</Registerblock>
             </Column>
         </Container>
         </article>

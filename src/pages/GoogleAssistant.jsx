@@ -21,7 +21,7 @@ export default state => (
             <Container>
                 <Column width="7">
                     <h1 data-aos="fade-up">Google Assistant Workshop</h1>
-                    <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
+                    <Registerblock to="https://www.eventbrite.nl/e/89022784545"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
                     {/* Deze training op locatie? <Anchor to="nowhere">Neem contact op</Anchor> */}
                 </Column>
             </Container>
@@ -93,7 +93,7 @@ export default state => (
         </Authorblock>
         <Container align="center">
             <Column width="8">
-                <Registerblock to="https://www.eventbrite.nl/e/tickets-chatbot-discovery-track-91518148245"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
+                <Registerblock to="https://www.eventbrite.nl/e/89022784545"><strong>Donderdag 16 en vrijdag 17 april 2020</strong><br />Lichttoren Eindhoven</Registerblock>
             </Column>
         </Container>
         </article>

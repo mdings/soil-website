@@ -5,10 +5,11 @@
   "author": "Maarten Dings",
   "license": "MIT",
   "scripts": {
+    "postinstall": "cd src/hyperstatic && npm install",
     "start": "parcel src/index.html --no-cache",
     "build": "rimraf .cache && rimraf dist && parcel build ./src/index.html --no-source-maps --detailed-report && workbox generateSW workbox-config.js",
     "render-pages": "npm run build && node ./render-pages.js",
-    "deploy": "npm run render-pages && now dist --name soil"
+    "deploy": "npm run render-pages && now --prod dist --name soil"
   },
   "browserslist": [
     "defaults"

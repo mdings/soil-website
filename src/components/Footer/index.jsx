@@ -5,7 +5,7 @@ export default () => (
         <div>
             <span>Copyright &copy; Soil</span>
             <span>Lichttoren 32 5611 BJ Eindhoven</span>
-            <span>info@soilcompany.com</span>
+            <span><a href="mailto:sayhi@meetsoil.com">sayhi@meetsoil.com</a></span>
         </div>
         <Logo />
     </footer>
