@@ -1,11 +1,7 @@
-import Header from '../components/Header'
-import Serviceblock from '../components/Serviceblock'
-import Callout from '../components/Callout'
+
 import Column from '../components/Column'
-import Cta from '../components/cta'
 import Container from '../components/Container'
-import Gallery from '../components/Gallery'
-import Galleryitem from '../components/Galleryitem'
+
 
 import './home.sass'
 import Agendaitem from '../components/Agendaitem'
