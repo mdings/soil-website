@@ -48,7 +48,7 @@ export default state => (
             <Container>
                 <Column width="4">
                     <h2 data-aos="fade-up">Workshops &amp; trainingen</h2>
-                    <p data-aos="fade-up">Wij bieden onze workshops en trainingen aan in kleine, overzichtelijke groepen. Zo ontstaat er meer interactie en onderlinge samenwerking. Alle trainingen zijn tevens beschikbaar als in-company training. Neem hiervoor contact met ons op.</p>
+                    <p data-aos="fade-up">Wij bieden onze workshops en trainingen aan in kleine, overzichtelijke groepen. Zo ontstaat er meer interactie en onderlinge samenwerking. Alle trainingen zijn tevens beschikbaar als in-company training. Neem hiervoor <a href="mailto:sayhi@meetsoil.com">contact</a> met ons op.</p>
                     <Anchor href="/nl-nl/agenda">Bekijk de volledige agenda</Anchor>
                 </Column>
                 <Column width="8" flex={true}>
