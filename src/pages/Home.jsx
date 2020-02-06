@@ -27,7 +27,7 @@ export default state => (
                 <Container>
                     <Column width="8">
                             <p data-aos="fade-up" data-aos-delay="200">
-                                De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Meer dan ooit is het tech-landschap gefragmenteerd en complex. Je wilt mee in de vooruitgang, maar waar waar begin je?
+                                De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Meer dan ooit is het tech-landschap gefragmenteerd en complex. Er liggen kansen die je kunt benutten en je wilt mee in de vooruitgang, maar waar waar begin je?
                             </p>
                         </Column>
                 </Container>
