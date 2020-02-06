@@ -1,12 +1,17 @@
+@import "../Layout/include-media"
+
 .c-agenda-item
     background-color: #fafbf8
-    height: 80px
     display: flex
     font-size: .8rem
     align-items: center
     justify-content: space-between
-    padding: 0 20px 0 30px
     position: relative
+    padding: 4px 5px 4px 14px
+
+    @include media(">=tablet")
+        padding: 0 20px 0 30px
+        height: 80px
 
     &:before
         content: ''
@@ -14,23 +19,35 @@
         left: 0
         top: 0
         bottom: 0
-        width: 10px
         display: inline-block
         background-color: red
+        width: 5px
+
+        @include media(">tablet")
+            width: 10px
 
     & + .c-agenda-item
         margin-top: 10px
 
+    & > div
+        display: flex
+        width: 100%
+        @include media("<tablet")
+            flex-direction: column
+            margin-right: 10px
 
     &__date
-        flex: 0 1 200px
+        @include media(">=tablet")
+            flex: 0 1 260px
 
     &__name
-        flex: 0 1 300px
         font-weight: bolder
+        @include media(">=tablet")
+            flex: 0 1 350px
 
     &__location
-        flex: 0 1 200px
+        @include media(">=tablet")
+            flex: 0 1 200px
 
     &__date,
     &__name 
