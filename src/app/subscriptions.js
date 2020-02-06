@@ -2,7 +2,6 @@
 const LoadScript = (url, callback) => {
     const script = document.createElement('script')
     script.type = "text/javascript"
-    script.defer = true
     if (script.readyState) { // only required for IE <9
         script.onreadystatechange = () => {
             if (script.readyState === "loaded" || script.readyState === "complete") {
