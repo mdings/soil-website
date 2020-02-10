@@ -19,7 +19,7 @@ export default (state) => (
     })}>
         <Nav state={state} />
         {Router(state)}
-        <Newsletter />
+        <Newsletter state={state} />
         <Footer />
     </div>
 )

@@ -32,6 +32,7 @@
     "aos": "^2.3.4",
     "classcat": "^4.0.2",
     "dateformat": "^3.0.3",
+    "dot-prop": "^5.2.0",
     "fromentries": "^1.2.0",
     "hyperapp": "^2.0.3",
     "rellax": "^1.12.0",

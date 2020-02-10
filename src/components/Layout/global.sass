@@ -43,6 +43,9 @@ p, ul, ol
 	// font-size: 22px
 	line-height: 1.7
 
+.paragraph
+	display: inline-block
+	
 strong
 	font-family: var(--font-bold)
 
@@ -85,7 +88,7 @@ section
 	@include media(">=desktop")
 		padding: 7rem 0	
 
-	p 
+	p, .paragraph 
 
 		& + *
 			margin-top: 1.5rem

@@ -1,0 +1,15 @@
+{
+    "home": {
+        "callout": "De brug naar nieuwe digitale mogelijkheden.",
+        "intro": "De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Meer dan ooit is het tech-landschap gefragmenteerd en complex. Er liggen kansen die je kunt benutten en je wilt mee in de vooruitgang, maar waar waar begin je?",
+        "about-title": "Wat wij doen",
+        "about-text": "<p data-aos=\"fade-up\">Wij nemen individuen en organisaties bij de hand en maken gecompliceerde innovatieve thema's eenvoudig. Dat doen we door middel van trainingen en programma’s met bewezen tools. Zo laten we iederen profiteren van de mogelijkheden die technologische vooruitgang biedt en maken we innovatie bereikbaar.</p><p data-aos=\"fade-up\">Begin bij het begin. Welkom bij Soil.</p>",
+        "workshops-title": "Workshops &amp; trainingen",
+        "workshops-text": "<p data-aos=\"fade-up\">Wij bieden onze workshops en trainingen aan in kleine, overzichtelijke groepen. Zo ontstaat er meer interactie en onderlinge samenwerking. Alle trainingen zijn tevens beschikbaar als in-company training. Neem hiervoor <a href=\"mailto:sayhi@meetsoil.com\">contact</a> met ons op.</p>"
+    },
+    "newsletter": {
+        "title": "Op de hoogte blijven?",
+        "text": "<p>Wil je weten wanneer we nieuwe workshops of trainingen doen? Laat dan je e-mail adres achter zodat we je iets kunnen laten weten!</p>",
+        "send-text": "Verstuur"
+    }
+}

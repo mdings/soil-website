@@ -5,8 +5,9 @@ import Serviceblock from '../components/Serviceblock'
 import Callout from '../components/Callout'
 import Column from '../components/Column'
 import Container from '../components/Container'
-import './home.sass'
+import { i18n } from '../utils'
 
+import './home.sass'
 export const Init = (state) => ({
     ...state,
     counter: 0
@@ -21,13 +22,15 @@ export default state => (
             <div>
                 <Container>
                     <Column width="6">
-                            <Callout>De brug naar nieuwe digitale mogelijk&#8203;heden.</Callout>
+                            <Callout>
+                                {i18n(state.locale, 'home.callout')}
+                            </Callout>
                         </Column>
                 </Container>
                 <Container>
                     <Column width="8">
                             <p data-aos="fade-up" data-aos-delay="200">
-                                De wereld om ons heen verandert snel en de digitale revolutie lijkt geen grenzen te kennen. Meer dan ooit is het tech-landschap gefragmenteerd en complex. Er liggen kansen die je kunt benutten en je wilt mee in de vooruitgang, maar waar waar begin je?
+                                {i18n(state.locale, 'home.intro')}
                             </p>
                         </Column>
                 </Container>
@@ -36,8 +39,8 @@ export default state => (
         <section class="about-us">
             <Container>
                 <Column width="6">
-                    <h1 data-aos="fade-up">Wat wij doen</h1>
-                    <p data-aos="fade-up">Wij nemen individuen en organisaties bij de hand en maken gecompliceerde innovatieve thema's eenvoudig. Dat doen we door middel van trainingen en programma’s met bewezen tools. Zo laten we iederen profiteren van de mogelijkheden die technologische vooruitgang biedt en maken we innovatie bereikbaar.</p><p data-aos="fade-up">Begin bij het begin. Welkom bij Soil.</p>
+                    <h1 data-aos="fade-up">{i18n(state.locale, 'home.about-title')}</h1>
+                    {i18n(state.locale, 'home.about-text', true)}
                 </Column>
                 <Column width="6">
                    
@@ -47,8 +50,8 @@ export default state => (
         <section class="services">
             <Container>
                 <Column width="4">
-                    <h2 data-aos="fade-up">Workshops &amp; trainingen</h2>
-                    <p data-aos="fade-up">Wij bieden onze workshops en trainingen aan in kleine, overzichtelijke groepen. Zo ontstaat er meer interactie en onderlinge samenwerking. Alle trainingen zijn tevens beschikbaar als in-company training. Neem hiervoor <a href="mailto:sayhi@meetsoil.com">contact</a> met ons op.</p>
+                    <h2 data-aos="fade-up">{i18n(state.locale, 'home.workshops-title')}</h2>
+                    {i18n(state.locale, 'home.workshops-text', true)}
                     <Anchor href="/nl-nl/agenda">Bekijk de volledige agenda</Anchor>
                 </Column>
                 <Column width="8" flex={true}>
